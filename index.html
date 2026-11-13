@@ -1,0 +1,128 @@
+
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Аиша и Рахман ❤️</title>
+<style>
+* { box-sizing: border-box; }
+
+body {
+    margin: 0;
+    min-height: 100vh;
+    background: radial-gradient(circle, #351126, #09030b 75%);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    font-family: Arial, sans-serif;
+    overflow: hidden;
+}
+
+h1 {
+    color: #ffb5d9;
+    font-size: 25px;
+    text-shadow: 0 0 15px #ff238d;
+    margin-bottom: 8px;
+}
+
+.heart {
+    width: min(96vw, 570px);
+    animation: pulse 2s infinite ease-in-out;
+    filter: drop-shadow(0 0 13px #ff238d);
+}
+
+@keyframes pulse {
+    0%, 100% { transform: scale(1); }
+    50% { transform: scale(1.035); }
+}
+
+.message {
+    text-align: center;
+    color: #ffd5e9;
+    font-size: 17px;
+    line-height: 1.8;
+    margin-top: 10px;
+    text-shadow: 0 0 10px #ff238d;
+}
+</style>
+</head>
+
+<body>
+
+<h1>Два имени — одно сердце ❤️</h1>
+
+<svg class="heart" viewBox="0 0 600 560">
+
+<defs>
+    <path id="heartShape"
+    d="M300 520
+    C260 480 70 340 70 190
+    C70 80 150 30 230 30
+    C270 30 295 55 300 85
+    C305 55 330 30 370 30
+    C450 30 530 80 530 190
+    C530 340 340 480 300 520 Z"/>
+
+    <clipPath id="heartClip">
+        <use href="#heartShape"/>
+    </clipPath>
+
+    <clipPath id="leftClip">
+        <rect x="0" y="0" width="300" height="560"/>
+    </clipPath>
+
+    <clipPath id="rightClip">
+        <rect x="300" y="0" width="300" height="560"/>
+    </clipPath>
+
+    <pattern id="aisha" width="190" height="48"
+    patternUnits="userSpaceOnUse">
+        <text x="0" y="29"
+        font-size="23" font-weight="bold"
+        fill="#fff0f8">АИША ♥ АИША</text>
+    </pattern>
+
+    <pattern id="rahman" width="220" height="48"
+    patternUnits="userSpaceOnUse">
+        <text x="0" y="29"
+        font-size="23" font-weight="bold"
+        fill="#fff0f8">РАХМАН ♥ РАХМАН</text>
+    </pattern>
+
+    <linearGradient id="pink" x1="0" y1="0" x2="1" y2="1">
+        <stop offset="0%" stop-color="#ff83c4"/>
+        <stop offset="100%" stop-color="#c00066"/>
+    </linearGradient>
+
+    <linearGradient id="red" x1="0" y1="0" x2="1" y2="1">
+        <stop offset="0%" stop-color="#ff647f"/>
+        <stop offset="100%" stop-color="#a90030"/>
+    </linearGradient>
+</defs>
+
+<g clip-path="url(#heartClip)">
+
+    <g clip-path="url(#leftClip)">
+        <rect width="600" height="560" fill="url(#pink)"/>
+        <rect width="600" height="560" fill="url(#aisha)"/>
+    </g>
+
+    <g clip-path="url(#rightClip)">
+        <rect width="600" height="560" fill="url(#red)"/>
+        <rect width="600" height="560" fill="url(#rahman)"/>
+    </g>
+
+</g>
+</svg>
+
+<div class="message">
+    АИША ❤️ РАХМАН<br>
+    Два имени, одно целое сердце<br>
+    Даже расстояние не разделит нас
+</div>
+
+</body>
+</html>
